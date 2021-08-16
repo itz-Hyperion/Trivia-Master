@@ -7,8 +7,21 @@ function signIn(){
     const promise = auth.signInWithEmailAndPassword(email.value, password.value);
     promise.catch(e => alert(e.message));
 
-    alert("Logged In as:" + "" + email.value);
+    alert("Logged In as:" + " " + email.value);
 }
 
 signIn();
 
+auth.onAuthStateChanged(function(user){
+
+    if(user){
+        var email = user.email;
+        alert("Active User" + email);
+        window.location.href = "../../../index.html";
+        
+    }else{
+        alert("No Active User");
+    }
+
+
+})
