@@ -17,11 +17,18 @@ auth.onAuthStateChanged(function(user){
     if(user){
         var email = user.email;
         alert("Active User" + email);
-        window.location.href = "../../../index.html";
         
     }else{
         alert("No Active User");
     }
 
 
-})
+});
+
+
+function signOut(){
+		
+    auth.signOut();
+    alert("Signed Out");
+    window.location.href = "../../../index.html";
+};

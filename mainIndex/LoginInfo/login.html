@@ -35,27 +35,42 @@
 
     <script src="js/login.js" defer></script>
     <link rel="stylesheet" href="css/signin.css">
+    <link rel="stylesheet" href="../home/home.css">
     
 </head>
 <body>
-    
-  <div class="loginbox"> </div>
-    <!-- <img src="avatar.png" class="avatar"></img> -->
-        <hl>Login Here</hl>
-        <div id="formContainer1">
-            <div id="header"></div>
-            <p>Email</p>
-            <input type="email" placeholder="email" id="email">
-            <p>Password</p>
-            <input type="password" placeholder="password" id="password">
-    
-            <button onclick="signIn()" id="signIn"> Sign In </button>
-            
-    
-            <a href="#">Forgot password?</a><br>
-            <a href="signup.html">Don't have an Account?</a>
+    <div id="header">
+        <div class="header_logo">
+            <a href="../../index.html"><img src="../pictures/logo.png"></a>
+            <h1 class="main_txt"></h1>
         </div>
         
+        <div class="table_of_contents">
+            <p><a href="login.html">Sign In/Out</a></p>
+                <p>_</p>
+            <p><a href="../Profile/profile.html">Profile</a></p>
+            <div class="proile_picture">
+                <img src="#">
+            </div>
+        </div>
+    </div>
+    
+  <div id="loginbox"> 
+    <!-- <img src="avatar.png" class="avatar"></img> -->
+        <hl>Login Here</hl>
+            
+        <p>Email</p>
+        <input type="email" placeholder="email" id="email">
+        <p>Password</p>
+        <input type="password" placeholder="password" id="password">
+
+        <button onclick="signIn()" id="signIn"> Sign In </button>
+        <button onclick="signOut()" id="signOut"> Sign Out </button>
+        
+
+        <a href="#">Forgot password?</a><br>
+        <a href="signup.html">Don't have an Account?</a>
+    </div>   
 
 </body>
 </html>
