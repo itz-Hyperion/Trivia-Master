@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.logo{
+    float: left;
+    position: relative
+}
+.wrapper{
+    width: 1170px;
+    margin: auto; 
+
+}
+header{
+    background: url("background.jpg");
+    height: 100vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.nav-area{
+    float: right;
+    list-style: none;
+    margin-top: 40px;
+
+}
+.nav-area li{
+    display: inline-block;
+}
+.nav-area li a{
+    color: white;
+    text-decoration: none;
+    padding: 7px 20px;
+    font-family:Arial;
+    font-size: 14px;
+
+}
+.nav-area li a:hover{
+    background: white;
+    color: #333;
+}
+.logo img{
+    width: 100px;
+    float: left;
+    height: auto;
+}
+.welcome-text{
+    position:relative;
+    width: 600px;
+    height: 200px;
+    margin: 0% 30%;
+    text-align: center;
+}
+.welcome-text h1{
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+}
+.playbutton{
+    font-family: Arial;
+    font-size: 40px;
+    font-weight: 200px;
+    color: white;
+    margin-top: 10%;
+    margin-left: 45%;
+    margin-right: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 120px;
+}
+.playbutton li {
+    background: white;
+}
+.playbutton li a:hover{
+    background: white;
+    color: #333
+}
